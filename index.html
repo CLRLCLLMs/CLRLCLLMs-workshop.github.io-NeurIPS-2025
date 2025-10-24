@@ -99,6 +99,24 @@
       flex: 1;
       justify-content: center;
     }
+
+    /* Organizer card */
+    .organizer-card {
+      max-width: 250px;
+      text-align: center;
+    }
+
+    .organizer-card img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .organizer-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
   </style>
 </head>
 <body>
@@ -150,10 +168,14 @@
   <!-- Organizers Section -->
   <section id="organizers">
     <h2>Organizers</h2>
-    <ul>
-      <li><strong>Olusanya Joy Naomi</strong> – Masakhane NLP, Obafemi Awolowo University</li>
-      <li>+ More collaborators to be announced</li>
-    </ul>
+    <div class="organizer-container">
+      <div class="organizer-card">
+        <img src="ay.jpg" alt="Joy Olusanya">
+        <h3>Joy Olusanya</h3>
+        <p><strong>Affiliation:</strong> Masakhane NLP, Obafemi Awolowo University</p>
+        <p>Joy Olusanya is an AI and NLP researcher focused on preserving African languages and integrating them into modern AI applications. She leads initiatives on low-resource language modeling and culturally inclusive AI.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
