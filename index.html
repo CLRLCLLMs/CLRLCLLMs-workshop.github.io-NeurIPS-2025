@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLRLCLLMs Workshop @ NeurIPS 2025</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -14,42 +14,55 @@
       color: #222;
       line-height: 1.6;
     }
-    header {
-      background-color: #0d1b2a;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
-    }
-    header p {
-      font-size: 1rem;
-      opacity: 0.8;
-    }
+
     nav {
       background: #1b263b;
       padding: 0.8rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 600;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
+    header {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
     section {
       padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       color: #0d1b2a;
+      margin-bottom: 1rem;
     }
+
     footer {
       background: #0d1b2a;
       color: white;
@@ -57,6 +70,7 @@
       padding: 1.5rem;
       font-size: 0.9rem;
     }
+
     .btn {
       display: inline-block;
       padding: 0.7rem 1.2rem;
@@ -67,63 +81,54 @@
       text-decoration: none;
       font-weight: 600;
     }
+
     .btn:hover {
       background-color: #415a77;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CLRLCLLMs Workshop @ NeurIPS 2025</h1>
-    <p>Centering Low-Resource Languages and Cultures in the Age of Large Language Models</p>
-  </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
     <a href="#speakers">Speakers</a>
     <a href="#agenda">Agenda</a>
-    <a href="#cfp">Call for Papers</a>
+    <a href="#call">Call for Papers</a>
     <a href="#organizers">Organizers</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="home">
-    <h2>Welcome to the CLRLCLLMs Workshop</h2>
-    <p>The <strong>CLRLCLLMs Workshop</strong> at <strong>NeurIPS 2025</strong> focuses on advancing inclusive AI research for <strong>low-resource languages</strong> and <strong>cultural representation</strong>.</p>
-    <p><strong>Date:</strong> December 12, 2025<br>
-       <strong>Location:</strong> Mexico City, Mexico<br>
-       <strong>Venue:</strong> NeurIPS 2025 Conference Hall (Room TBA)</p>
-  </section>
+  <!-- Home Section -->
+  <header id="home">
+    <h1>CLRLCLLMs Workshop @ NeurIPS 2025</h1>
+    <p><strong>Centering Low-Resource Languages and Cultures in the Age of Large Language Models</strong></p>
+    <p>Welcome to the CLRLCLLMs Workshop! The workshop at NeurIPS 2025 focuses on advancing inclusive AI research for low-resource languages and cultural representation.</p>
+    <p><strong>Date:</strong> December 12, 2025</p>
+    <p><strong>Location:</strong> Mexico City, Mexico</p>
+    <p><strong>Venue:</strong> NeurIPS 2025 Conference Hall</p>
+  </header>
 
+  <!-- Speakers Section -->
   <section id="speakers">
     <h2>Speakers</h2>
-    <p>Our lineup of invited speakers includes leading researchers, linguists, and technologists shaping the future of multilingual AI.</p>
-    <ul>
-      <li>To be announced soon.</li>
-    </ul>
+    <p>Our lineup of invited speakers includes leading researchers and practitioners in AI, linguistics, and cultural studies. Details will be announced soon.</p>
   </section>
 
+  <!-- Agenda Section -->
   <section id="agenda">
     <h2>Agenda</h2>
-    <p>Stay tuned for the full workshop schedule, including keynote talks, paper presentations, and panel discussions.</p>
-    <ul>
-      <li><strong>Morning Session:</strong> Keynotes & Paper Presentations</li>
-      <li><strong>Afternoon Session:</strong> Panel Discussions & Networking</li>
-    </ul>
+    <p>Coming soon — a detailed schedule of talks, panels, and interactive sessions designed to foster discussion around low-resource languages and large language models.</p>
   </section>
 
-  <section id="cfp">
+  <!-- Call for Papers Section -->
+  <section id="call">
     <h2>Call for Papers</h2>
-    <p>We invite submissions exploring topics such as:</p>
-    <ul>
-      <li>Low-resource language modeling and datasets</li>
-      <li>Cultural representation in AI systems</li>
-      <li>Evaluation methods for multilingual models</li>
-      <li>Ethics, policy, and inclusion in NLP</li>
-    </ul>
+    <p>We invite submissions related to low-resource language processing, multilingual models, cultural inclusivity in NLP, and LLM alignment for underrepresented communities.</p>
     <a href="#" class="btn">Submit Your Paper</a>
   </section>
 
+  <!-- Organizers Section -->
   <section id="organizers">
     <h2>Organizers</h2>
     <ul>
@@ -132,14 +137,17 @@
     </ul>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>For questions, partnerships, or sponsorship inquiries, please email us at:</p>
     <p><strong>center4lowresourcellms@gmail.com</strong></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 CLRLCLLMs Workshop @ NeurIPS | Built with ❤️ by the organizing team</p>
+    <p>&copy; 2025 CLRLCLLMs Workshop @ NeurIPS | Built with ❤️ by the Organizing Team</p>
   </footer>
+
 </body>
 </html>
