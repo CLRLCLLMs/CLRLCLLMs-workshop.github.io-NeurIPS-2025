@@ -18,10 +18,17 @@
     nav {
       background: #1b263b;
       padding: 0.8rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+    }
+
+    nav img {
+      height: 40px;
+      margin-right: 1rem;
+      cursor: pointer;
     }
 
     nav a {
@@ -85,18 +92,30 @@
     .btn:hover {
       background-color: #415a77;
     }
+
+    /* Flex spacing for menu links */
+    .nav-links {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#speakers">Speakers</a>
-    <a href="#agenda">Agenda</a>
-    <a href="#call">Call for Papers</a>
-    <a href="#organizers">Organizers</a>
-    <a href="#contact">Contact</a>
+    <a href="https://neurips.cc/" target="_blank">
+      <img src="NeurIPS_logo_stacked.png" alt="NeurIPS Logo">
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#call">Call for Papers</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <!-- Home Section -->
@@ -118,7 +137,7 @@
   <!-- Agenda Section -->
   <section id="agenda">
     <h2>Agenda</h2>
-    <p>Coming soon — a detailed schedule of talks, panels, and interactive sessions designed to foster discussion around low-resource languages and large language models.</p>
+    <p>Stay tuned for the full workshop schedule, including keynote talks, paper presentations, and panel discussions.</p>
   </section>
 
   <!-- Call for Papers Section -->
