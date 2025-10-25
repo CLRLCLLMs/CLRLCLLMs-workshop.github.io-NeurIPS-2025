@@ -93,27 +93,43 @@
       background-color: #415a77;
     }
 
+    /* Flex spacing for menu links */
     .nav-links {
       display: flex;
       flex: 1;
       justify-content: center;
     }
 
+    /* Organizer section styling */
+    .organizer-container {
+      display: flex;
+      justify-content: center;  /* centers the cards horizontally */
+      align-items: flex-start;
+      flex-wrap: wrap;          /* makes it responsive for smaller screens */
+      gap: 30px;                /* space between cards */
+      margin-top: 2rem;
+    }
+
     .organizer-card {
       max-width: 250px;
       text-align: center;
+      background-color: #fff;   /* subtle card background */
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .organizer-card:hover {
+      transform: translateY(-5px); /* small lift effect on hover */
     }
 
     .organizer-card img {
       width: 200px;
+      height: 200px;
+      object-fit: cover;         /* maintains proper proportions */
       border-radius: 10px;
-    }
-
-    .organizer-container {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      flex-wrap: wrap;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
