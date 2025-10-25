@@ -152,13 +152,50 @@
   </nav>
 
   <!-- Home Section -->
-  <header id="home">
-    <h1>CLRLCLLMs Workshop @ NeurIPS 2025</h1>
-    <p><strong>Centering Low-Resource Languages and Cultures in the Age of Large Language Models</strong></p>
-    <p><strong>Date:</strong> December 1, 2025</p>
-    <p><strong>Location:</strong> Mexico City, Mexico</p>
-    <p><strong>Room:</strong> Don Alberto 1</p>
-  </header>
+<header id="home">
+  <h1>CLRLCLLMs Workshop @ NeurIPS 2025</h1>
+  <p><strong>Centering Low-Resource Languages and Cultures in the Age of Large Language Models</strong></p>
+  <p><strong>Date:</strong> December 1, 2025</p>
+  <p><strong>Location:</strong> Mexico City, Mexico</p>
+  <p><strong>Room:</strong> Don Alberto 1</p>
+</header>
+
+<style>
+  header {
+    background: url('mexico_city.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 27, 42, 0.6); /* dark overlay for better text visibility */
+    z-index: 0;
+  }
+
+  header h1, header p {
+    position: relative;
+    z-index: 1;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+  }
+</style>
+
 
   <!-- Overview Section -->
   <section id="overview">
