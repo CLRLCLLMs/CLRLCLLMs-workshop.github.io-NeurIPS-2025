@@ -233,44 +233,70 @@
     <a href="#" class="btn">Submit Your Paper</a>
   </section>
 
-  <!-- Organizers Section -->
-<section id="organizers">
+ <section id="organizers">
   <h2>Organizers</h2>
-  <div class="organizer-container">
+
+  <!-- Flex container for all organizers -->
+  <div class="organizers-container">
 
     <!-- Organizer 1 -->
     <div class="organizer-card">
       <img src="ay.jpg" alt="Joy Olusanya">
       <h3>Joy Olusanya</h3>
-        <a href="https://joynaomi81.github.io/joycenaomi.github.io/" target="_blank" style="text-decoration:none; color:#0d1b2a;">
-          Obafemi Awolowo University
-          <span style="margin-left:5px;">🔗</span>
-        </a>
-      </p>
+      <a href="https://joynaomi81.github.io/joycenaomi.github.io/" target="_blank" style="text-decoration:none; color:#0d1b2a;">
+        Obafemi Awolowo University
+        <span style="margin-left:5px;">🔗</span>
+      </a>
     </div>
 
     <!-- Organizer 2 -->
     <div class="organizer-card">
       <img src="Mary.jpg" alt="Mary Salami">
       <h3>Mary Salami</h3>
-        <a href="https://www.linkedin.com/in/marysalami" target="_blank" style="text-decoration:none; color:#0d1b2a;">
-          University of California, Santa Barbara
-          <span style="margin-left:5px;">🔗</span>
-        </a>
-      </p>
+      <a href="https://www.linkedin.com/in/marysalami" target="_blank" style="text-decoration:none; color:#0d1b2a;">
+        University of California, Santa Barbara
+        <span style="margin-left:5px;">🔗</span>
+      </a>
     </div>
+
     <!-- Organizer 3 -->
-<div class="organizer-card">
-  <img src="0Q3A8226 - Cynthia Amol.jpg" alt="Cynthia Jayne Amol">
-  <h3>Cynthia Jayne Amol</h3>
-  <a href="https://jayneamol.github.io/portfolio/" target="_blank" style="text-decoration:none; color:#0d1b2a;">
-    Maseno University / Tonative Community
-    <span style="margin-left:5px;">🔗</span>
-  </a>
-</div>
+    <div class="organizer-card">
+      <img src="0Q3A8226 - Cynthia Amol.jpg" alt="Cynthia Jayne Amol">
+      <h3>Cynthia Jayne Amol</h3>
+      <a href="https://jayneamol.github.io/portfolio/" target="_blank" style="text-decoration:none; color:#0d1b2a;">
+        Maseno University / Tonative Community
+        <span style="margin-left:5px;">🔗</span>
+      </a>
+    </div>
 
   </div>
 </section>
+
+<!-- Styling -->
+<style>
+.organizers-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allows them to go to next line on small screens */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.organizer-card {
+  text-align: center;
+  max-width: 220px;
+}
+
+.organizer-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+</style>
 
 
   <!-- Contact Section -->
