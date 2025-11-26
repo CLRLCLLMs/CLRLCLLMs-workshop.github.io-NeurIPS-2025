@@ -131,6 +131,32 @@
       border-radius: 10px;
       margin-bottom: 1rem;
     }
+    .agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.agenda-table th,
+.agenda-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.agenda-table th {
+  background: #f3f5ff;
+  color: #0b4fff;
+  font-weight: bold;
+}
+
+.agenda-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.agenda-table td em {
+  color: #333;
+}
   </style>
 </head>
 <body>
@@ -216,128 +242,130 @@
   <!-- Agenda Section -->
 <section id="agenda">
   <h2>Agenda</h2>
-  <div class="agenda-container">
 
-    <!-- Day Title -->
-    <h3>Monday, 1 December 2025</h3>
+  <h3>Monday, 1 December 2025</h3>
 
-    <!-- Agenda Table -->
-    <div class="agenda-table">
+  <table class="agenda-table">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Session</th>
+        <th>Details</th>
+      </tr>
+    </thead>
 
-      <div class="agenda-row">
-        <div class="time">09:00–09:30</div>
-        <div class="session">
-          <strong>Workshop opening and registration</strong> – Don Alberto 1
-        </div>
-      </div>
+    <tbody>
+      <tr>
+        <td>09:00–09:30</td>
+        <td>Workshop Opening & Registration</td>
+        <td>Don Alberto 1</td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">09:30–09:45</div>
-        <div class="session">
-          <strong>Welcome and Opening Remarks</strong> – Workshop Organizer: Oluchi
-        </div>
-      </div>
+      <tr>
+        <td>09:30–09:45</td>
+        <td>Welcome & Opening Remarks</td>
+        <td>Workshop Organizer — Oluchi</td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">09:45–10:30</div>
-        <div class="session">
-          <strong>Keynote Speaker</strong><br>
+      <tr>
+        <td>09:45–10:30</td>
+        <td>Keynote Speaker</td>
+        <td>
           <em>Towards Representative, Trustworthy and Scalable Multilingual, Multi-cultural Evaluation</em><br>
-          Sunayana Sitaram – Microsoft India
-        </div>
-      </div>
+          Sunayana Sitaram (Microsoft India)
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">10:30–10:45</div>
-        <div class="session">
-          <strong>Coffee Break</strong>
-        </div>
-      </div>
+      <tr>
+        <td>10:30–10:45</td>
+        <td>Coffee Break</td>
+        <td></td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">10:45–11:00</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
+      <tr>
+        <td>10:45–11:00</td>
+        <td>Spotlight Presentation</td>
+        <td>
           <em>Community-in-the-Loop: A Framework for Participatory Dataset Creation for Indigenous and African Languages</em><br>
           Balogun David Taiwo
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">11:00–11:15</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
+      <tr>
+        <td>11:00–11:15</td>
+        <td>Spotlight Presentation</td>
+        <td>
           <em>Culturally aware instruction and alignment methods for low-resource Indian-language LLMs</em><br>
           Praveen Tangarajan & Madhvi Sharma
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">11:15–11:30</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
-          <em>ENLIVEN-1000: A Comprehensive Revitalization Framework for 1000+ Endangered Languages via Broad-Coverage LID and LLM-Augmented MT</em><br>
+      <tr>
+        <td>11:15–11:30</td>
+        <td>Spotlight Presentation</td>
+        <td>
+          <em>ENLIVEN-1000: A Comprehensive Revitalization Framework for 1000+ Endangered Languages</em><br>
           Philip Meng
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">11:30–11:45</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
+      <tr>
+        <td>11:30–11:45</td>
+        <td>Spotlight Presentation</td>
+        <td>
           <em>AfriStereo: A Culturally Grounded Dataset for Evaluating Stereotypical Bias in LLMs</em><br>
           Oche David
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">11:45–12:00</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
+      <tr>
+        <td>11:45–12:00</td>
+        <td>Spotlight Presentation</td>
+        <td>
           <em>Developing a Non-Western Culture Aware RAG Application</em><br>
           Ariana Mondiri
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">12:00–13:00</div>
-        <div class="session">
-          <strong>Lunch Break</strong>
-        </div>
-      </div>
+      <tr>
+        <td>12:00–13:00</td>
+        <td>Lunch Break</td>
+        <td></td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">13:00–13:45</div>
-        <div class="session">
-          <strong>Keynote Speaker</strong><br>
+      <tr>
+        <td>13:00–13:45</td>
+        <td>Keynote Speaker</td>
+        <td>
           <em>Endangered Languages in the Age of LLM</em><br>
-          Emily Prud'hommeaux – Boston College
-        </div>
-      </div>
+          Emily Prud'hommeaux (Boston College)
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">13:45–14:00</div>
-        <div class="session">
-          <strong>Spotlight Presentation</strong><br>
+      <tr>
+        <td>13:45–14:00</td>
+        <td>Spotlight Presentation</td>
+        <td>
           <em>CL-PDE: A Heterogeneous Graph Framework for Cross-Lingual Mental Health Ontologies</em><br>
           Isabel Michelle
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="agenda-row">
-        <div class="time">14:00–14:45</div>
-        <div class="session">
-          <strong>Keynote Speaker</strong><br>
+      <tr>
+        <td>14:00–14:45</td>
+        <td>Keynote Speaker</td>
+        <td>
           <em>Active Learning for Low-resource Efficient NLP</em><br>
-          Bonaventure F. P. Dossou – McGill University | Mila Québec AI Institute
-        </div>
-      </div>
+          Bonaventure F. P. Dossou (McGill University | Mila Québec AI Institute)
+        </td>
+      </tr>
 
-    </div>
-  </div>
+    </tbody>
+  </table>
 </section>
 
 
+  
 <!-- Call for Lightning Talks Section -->
 <section id="lightning-talks">
   <h2>Call for Lightning Talks</h2>
@@ -463,14 +491,7 @@
   </a>
 </li>
 </ul>
-  <li>
-  <a href="https://drive.google.com/file/d/1cugOxuQ7agEpu3uuCsuqupYNzsSK4GCv/view?usp=sharing" target="_blank" rel="noopener">
-    Discovering the Latent Persona of Large Language Models via Bridging Inference
-  </a>
-</li>
-</ul>
-
-
+  
 </section>
 
 
